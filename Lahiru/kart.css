@@ -1,0 +1,172 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+  background: #333;
+}
+
+.navbar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    background-color: black;
+    text-align: center;
+}
+
+
+.navbar ul{
+    
+    list-style-type:none;
+    display: inline-flex;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+}
+.navbar ul li{
+    padding: 10px 60px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+.dropdown_menu{
+    left: 0;
+    top: 100%;
+    display: none;
+    position: fixed;
+}
+
+.navbar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    
+}
+
+
+.dropdown_menu ul{
+    
+    display: block;
+    margin: 0px;
+    width: 228px;
+}
+
+.dropdown_menu ul li a{
+    text-align: left;
+}
+
+.logo{
+    float: left;
+    margin-left: 50px;
+}
+.navlist  a:hover{
+    color: greenyellow;
+    text-decoration: none;
+    
+}
+.dropdown_menu  li:hover{
+    color: greenyellow;
+    background-color: darkslateblue;
+}
+.fas{
+    float: right;
+    margin-left: 20px;
+    padding-top: 20px;
+
+}
+.heading{
+    color: white;
+    font-weight: bolder;
+    margin: 40px;
+}
+
+.details{
+    margin-left: 15px;
+    height:220px;
+    width: 800px;
+    margin-bottom: 0px;
+    padding: 8px;
+    color: white;
+    border-top-left-radius:10px ;
+    border-bottom-left-radius: 10px;
+    float: left;
+    background-color: #555;
+}
+.details h2{
+    color: white;
+    font-weight: bolder;
+    margin-bottom: 40px;
+}
+.pics{
+    float: left;
+    margin-left: 0px;
+    margin-bottom: 0px;
+}
+
+.backto a{
+   color: white;
+   font-weight: bold;
+}  
+
+.backto{
+    margin-left: 5%;
+    margin-top: 62%;
+}
+.backto a{
+    text-decoration: none;
+}
+.backto a:hover{
+    font-weight: bold;
+    color: #EB5757;
+    
+}
+
+
+.footer{
+    background: #000;
+    color: white;
+    font-size: 14px;
+    padding: 60px 0 20px;
+
+
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+    
+}
+.footer{
+    margin-top: 8%;
+}
+.created p{
+    margin-left: 120px;
+}
+.created a{
+    color: white;
+    text-decoration: none;
+}
+.created a:hover{
+    color: #EB5757;
+}
+.footer-col-3 a{
+    color: white;
+    text-decoration: none;
+}
+.footer-col-3 a:hover{
+    color: #EB5757;
+}

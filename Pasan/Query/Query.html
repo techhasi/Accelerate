@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="eng">
+    <head>
+        <title>Query</title>
+        <link rel="stylesheet" href="style.css">
+        <script src="script.js"></script>
+        
+    </head>
+
+
+    <body>
+
+        <div class="navbar">
+            <div class="logo"> 
+                <img src="../Query/Resources/logo.png" alt="groupLogo" style="height: 48px; width: 130px;" >
+            </div>
+            <ul class="navlist">
+                 <li><a href="../Main/Main.html">Home</a></li>
+                 <li><a href="">Motor Sports <i class="fas fa-caret-down"></i></a>
+                     <div class="dropdown_menu">
+                          <ul>
+                              <li><a href="../../hasitha/Rally/Rally.html">Rally</a></li>
+                              <li><a href="../../Vinisha/4x4 Web page.html">4x4</a></li>
+                              <li><a href="../Formula 1/Formula1.html">Formula 1</a></li>
+                              <li><a href="../../Lahiru/karting.html">Karting</a></li>
+                          </ul>
+                     </div>
+                 </li>    
+                 <li><a href="../Query/Query.html">Inquiry</a></li>
+                 <li><a href="../../hasitha/Quiz/Quiz.html">Quiz</a></li>
+                 <li><a href="../../Lahiru/byproducts.html">Shop now <i class="fas fa-caret-down"></i></a>
+                 <div class="dropdown_menu">   
+                     <ul>
+                         <li><a href="../../Lahiru/byproducts.html">Sports wear</a></li>
+                         <li><a href="../../Lahiru/byproducts.html">Accesories</a></li>
+                     </ul>
+                 </div> 
+                 </li>
+                 <li><a href="../../hasitha/About Us/About us.html">About us</a></li>
+               </ul>
+        </div>
+    
+        <h1>Query</h1>
+        <form class="query" >
+            <div class="details">
+                <label for="name" class="text">Name: </label>
+                <input type="text" class="input" name="Name" value="" id="name"> 
+                <label for="email" class="text">Email: </label>
+                <input type="email" class="input" name="Email" value="" id="email"> <br><br>
+
+                <div class="'radio">
+                    <input type="radio" name="subject" value="Delivery" id="Delivery">
+                    <label for="Delivery">Delivery </label>
+                    <input type="radio" name="subject" value="Returns" id="Returns">
+                    <label for="Returns">Returns </label>
+                    <input type="radio" name="subject" value="Warrenty" id="Warrenty">
+                    <label for="Warrenty">Warenty </label>
+                    <input type="radio" name="subject" value="Other" id="Other">
+                    <label for="Other">Other </label>
+                    <input type="radio" name="subject" value="noResponce" id="noResponce" checked>
+                </div>
+                
+                <label for="details" class="text">Details: </label>
+                <textarea cols="44" rows="10" name="Details" value="" id="details"></textarea>
+                <br><br>
+
+                <input type="button" class="button" value="Check" onclick="check()">
+            </div>
+            
+        </form>
+
+        <p id="result"></p>
+
+        <div style="height: 80px;">
+
+        </div>
+
+
+        <div class="footer">
+            <div class="footer_container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <img src="Resources/Head and Footer/img1.png" alt="logo">
+                    </div>
+                    <div class="footer-col-2">
+                      <img src="Resources/Head and Footer/logo2.png" alt="logo2">
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li><a href="../../Vinisha/S4SVG.html">Site Map</a></li>
+                            <li><a href="Query.html">Inquiry</a></li>
+                            <li><a href="../../hasitha/Quiz/Quiz.html">Quiz</a></li>
+                            <li><a href="../../hasitha/About Us/About us.html">About us</a></li>
+                        </ul>
+                    </div>
+                    
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+
+                    <div class="ull">
+                        <a href="Editor_s Page/Editor_s_Page.html" target="blank_" class="btn2">Page Editor</a>
+                    </div>
+    
+                </div>
+            </div>
+    
+        </div>
+    
+
+    </body>
+</html>

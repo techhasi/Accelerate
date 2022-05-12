@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+            <link rel="stylesheet" href="CssFileforbuyProducts.css">
+            <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=EB+Garamond&display=swap" rel="stylesheet">
+    <title>buy products details</title>
+    </head>
+    <body>
+        <!-- header -->
+
+        <div class="navbar">
+            <div class="logo"> 
+                <img src="img1.png" alt="groupLogo" style="height: 70px; width: 150px;" >
+            </div>
+  
+            <ul class="navlist">   
+                 <li><a href="../Pasan/Main/Main.html">Home</a></li>
+                 <li><a href="">Motor Sports <i class="fas fa-caret-down"></i></a>
+                     <div class="dropdown_menu">
+                          <ul>
+                              <li><a href="../hasitha/Rally/Rally.html">Rally</a></li>
+                              <li><a href="../Vinisha/4x4 Web page.html">4x4</a></li>
+                              <li><a href="../Pasan/Formula 1/Formula1.html">Formula 1</a></li>
+                              <li><a href="../Lahiru/karting.html">Karting</a></li>
+                          </ul>
+                     </div>
+                 </li>    
+                 <li><a href="../Pasan/Query/Query.html">Inquiry</a></li>
+                 <li><a href="../hasitha/Quiz/Quiz.html">Quiz</a></li>
+                 <li><a href="../Lahiru/byproducts.html">Shop now <i class="fas fa-caret-down"></i></a>
+                 <div class="dropdown_menu">   
+                     <ul>
+                         <li><a href="../Lahiru/byproducts.html">Sports wear</a></li>
+                         <li><a href="../Lahiru/byproducts.html">Accesories</a></li>
+                     </ul>
+                 </div> 
+                 </li>
+                 <li><a href="../hasitha/About Us/About us.html">About us</a></li>
+             </ul>
+         </div>
+       
+        <!-- body -->
+         <div class="colorpick" id="top">
+        <select name="colorpicker" id="selectid" class="select">
+
+            <option value="" selected disabled hidden>--Select Color--</option>
+            <option class="black">Black</option>
+            <option class="white">White</option>
+            <option class="gray">gray</option> 
+        </select>
+        <select name="fontcolorpicker" id="fontid" class="select"> 
+
+            <option value="" selected disabled hidden>--Select Color--</option>
+            <option class="black">Black</option>
+            <option class="white">White</option>
+            <option class="gray">gray</option> 
+        </select>
+
+        <button class="btn3" onclick="colorpicker()">ok</button>
+    </div>
+<!-- thumbnail images -->
+        <div class="small-container single-product">
+            <div class="row">
+                <div class="col-2">
+                    <img src="13(1).jpg" alt="polo" id="ProductImg">
+                    <div class="small-img-row">
+                        <div class="small-img-col">
+                            <img src="13(2).jpg" alt="polo" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="13(3).jpg" alt="polo" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="13(4).jpg" alt="polo" class="small-img">
+                        </div>
+                        <div class="small-img-col">
+                            <img src="13(1).jpg" alt="polo" class="small-img">
+                        </div>
+                        
+                    </div>
+                  
+                </div>
+                <div class="col-2">
+            
+                    <h1>Nitron NTR R1</h1>
+                    
+                    <h4>$155.00</h4>
+                   
+                    <h3>Product Details</h3>
+                    <h4>Overview</h4>
+                    <ul>
+                        
+                        <li>The Nitron NTR R1 system offers unrivalled performance and value with a design that gives drivers a wide range of effective, easy to use damping control.
+
+                            1-Way combined damping adjustment. Developed from our full race suspension and sharing many components with the R3 system, the R1 offers exceptional performance, reliability and value for both road and track use. Widely praised by drivers around the world and respected for out-performing considerably more expensive suspension kits.
+                        
+                        
+
+                        </li>
+                      
+                    </ul>
+
+                </div>
+
+            </div>
+       
+
+
+        </div>
+        <!-- script for changing photos -->
+        <script>
+            var ProductImg = document.getElementById("ProductImg");
+            var SmallImg = document.getElementsByClassName("small-img");
+
+            SmallImg[0].onclick = function(){
+                ProductImg.src = SmallImg[0].src;
+            }
+            SmallImg[1].onclick = function(){
+                ProductImg.src = SmallImg[1].src;
+            }
+            SmallImg[2].onclick = function(){
+                ProductImg.src = SmallImg[2].src;
+            }
+            SmallImg[3].onclick = function(){
+                ProductImg.src = SmallImg[3].src;}
+            
+
+        </script>
+
+        <!-- feature Product -->
+
+        <div class="small-container">
+            <h2 class="title">Featured Products</h2>
+            <div class="row">
+                <div class="col-4">
+                    <img src="4(1).jpg" alt="elastic suit">
+                    <h4>ELAST1 UR F159</h4>
+                    <p>$240.00</p>
+                    <a href="BuyProduct4.html" class="btn1">View Product</a>
+                </div>
+                <div class="col-4">
+                    <img src="7(1).jpg" alt="RS7-K" >
+                    <h4>RS7-K </h4>
+                    <p>$600.00</p>
+                    <a href="BuyProduts7.html" class="btn1">View Product</a>
+                </div>
+                <div class="col-4">
+                    <img src="1(1).jpg" alt="SEAT">
+                    <h4>PRO 2000 QRT SEAT</h4>
+                    <p>$540.00</p>
+                    <a href="BuyProduts2.html" class="btn1">View Product</a>
+                </div>
+                <div class="col-4">
+                    <img src="8(4).jpg" alt="Steering Wheel" >
+                    <h4>Racing Steering Wheel</h4>
+                    <p>$200.00</p>
+                    <a href="BuyProduct8.html" class="btn1">View Product</a>
+                </div>
+                
+            </div>
+        </div>
+        <!-- our brands section  -->
+        <h2 class="title">Our Brands</h2>
+        <div class="brand">
+            <div class="small-container">
+                <div class="row">
+                    <div class="col-5">
+                        <img src="Logo(1).png" alt="BMW Logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="Logo(2).png" alt="ferrari Logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="Logo(3).png" alt="ford Logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="Logo(4).png" alt="mclaren Logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="Logo(7).png" alt="toyota Logo">
+                    </div>
+                    <div class="col-5">
+                        <img src="Logo(6).png" alt="Formula Logo">
+                    </div>
+                    
+                    
+                </div>
+            </div>
+        </div>
+        <a href="#top" class="btn2">Back To Top</a>
+        <a href="#top" class="btn2">Back To Top</a>
+        <!-- footer section -->
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <img src="img1.png" alt="logo">
+                    </div>
+                    <div class="footer-col-2">
+                      <img src="logo2.png" alt="logo2">
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul>
+                            <li><a href="S4SVG.html">Site Map</a></li>
+                            <li><a href="../Pasan/Query/Query.html">Inquiry</a></li>
+                            <li><a href="../hasitha/Quiz/Quiz.html">Quiz</a></li>
+                            <li><a href="../hasitha/About Us/About us.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul>
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                    <div class="ull">
+                        <a href="editor.html" class="btn2">Page Editor</a>
+                        
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+        <script>
+            function colorpicker(){
+                // change backgroundcolor
+                var x = document.getElementById("selectid");
+                var pickcolor=x.options[x.selectedIndex].value;
+                document.body.style.backgroundColor=pickcolor;
+                // change fontcolor  
+                var y = document.getElementById("fontid");
+                var pickcolor1=y.options[y.selectedIndex].value; 
+                document.body.style.color=pickcolor1;           
+            }
+
+
+        </script>
+    
+    </body> 
+
+</html>

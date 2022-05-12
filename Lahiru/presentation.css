@@ -1,0 +1,70 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    
+}
+body{
+    background-color: black;
+}    
+
+
+.position{
+    position: absolute;
+    position: left;
+    margin: 80px;
+    margin-left: 0px;
+   
+}
+
+.details img{
+    padding: 5px;
+    border-radius: 80px;
+    margin-right: 50px;
+}
+
+.names{
+    font-family: Arial, Helvetica, sans-serif;
+    position: absolute;
+    float: left;
+    color: white;
+    margin: 70px 550px;
+    font-size: 30px;
+    
+}
+.names p{
+    padding-top: 30px;
+    padding-bottom: 50px;
+    width: 800px;
+    margin-left: 100px;
+}
+
+
+.logo{
+    align-items: center;
+    margin-left: 550px;
+    
+}
+.details{
+    position: absolute;
+    float: left;
+    margin-top: 50px;
+    margin-left:  560px;;
+    font-size: 30px;
+}
+
+.align{
+    margin-left: 50px;
+}
+.align1{
+    margin-left: 50px;
+    margin-top: 20px;
+}
+.align2{
+    margin-left: 50px;
+    margin-top: 30px;
+}
+.align3{
+    margin-top: 30px;
+    margin-left: 50px;
+}

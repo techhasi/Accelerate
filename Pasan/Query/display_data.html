@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="eng">
+<head>
+    <title>Query</title>
+    <link rel="stylesheet" href="dispay_data_style.css">
+</head>
+
+<body>
+    <div class="query">
+        <p>Your name is <span id="detail1"></span></p><br>  
+        <p>Your email is <span id="detail2"></span></p><br>  
+        <p>Your subject is <span id="detail3"></span></p><br>    
+        <p>Your inquiry is <span id="detail4"></span></p><br>   
+        <form>
+            <input type="button" class="button" value="Edit" onclick="history.back()"> 
+            <input type="button" class="button" value="Send" onclick="sendData()">
+        </form>
+    </div>
+
+    <script>
+        document.getElementById("detail1").innerHTML = localStorage.getItem("value1");
+        document.getElementById("detail2").innerHTML = localStorage.getItem("value2");
+        document.getElementById("detail3").innerHTML = localStorage.getItem("value3");
+        document.getElementById("detail4").innerHTML = localStorage.getItem("value4");
+
+        function sendData() {
+            alert("Your message was sent");
+            Email.sendData("hwimalasooriya@gmail.com")
+            close.window;
+            
+        }
+
+    </script>
+
+</body>
+</html>

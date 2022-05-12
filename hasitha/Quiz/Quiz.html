@@ -1,0 +1,219 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="quizstyle.css"> 
+</head>
+<body>
+    <script src="quizscript.js"></script>
+    <header>
+        <div class="navbar">
+            <div class="logo"> 
+                <img src="Resources/logo.png" alt="groupLogo" style="height: 48px; width: 130px;" >
+            </div>
+            <ul class="navlist">
+                <li><a href="../../Pasan/Main/Main.html">Home</a></li>
+                <li><a href="">Motor Sports <i class="fas fa-caret-down"></i></a>
+                    <div class="dropdown_menu">
+                        <ul>
+                            <li><a href="../Rally/Rally.html">Rally</a></li>
+                            <li><a href="../../Vinisha/4x4 Web page.html">4x4</a></li>
+                            <li><a href="../../Pasan/Formula 1/Formula1.html">Formula 1</a></li>
+                            <li><a href="../../Lahiru/karting.html">Karting</a></li>
+                        </ul>
+                    </div>
+                </li>    
+                <li><a href="../../Pasan/Query/Query.html">Inquiry</a></li>
+                <li><a href="Quiz.html">Quiz</a></li>
+                <li><a href="../../Lahiru/byproducts.html">Shop now <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu">   
+                    <ul>
+                        <li><a href="../../Lahiru/byproducts.html">Sports wear</a></li>
+                        <li><a href="../../Lahiru/byproducts.html">Accesories</a></li>
+                    </ul>
+                </div> 
+                </li>
+                <li><a href="../About us/About us.html">About us</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <h1>Quiz</h1>
+    <p>Time remaining: </p>
+    <p id="timer">60</p>
+
+    <form>
+        <input type="button" class="button" value="Start quiz" onclick="countdown()">
+    </form>
+
+    <form name="quiz" id="quiz">
+
+        <div class="questions">
+            <p class="paragraph">1.Who won the very first Indianapolis 500?</p>
+            <input type ="radio" name="Q1" id="1.1" value="Ray Harroun">
+            <label for="1.1">Ray Harroun</label>
+            <input type ="radio" name="Q1" id="1.2" value="Dale Earnhardt">
+            <label for="1.2"> Dale Earnhardt</label>
+            <input type ="radio" name="Q1" id="1.3" value="Rob Walker">
+            <label for="1.3">Rob Walker</label>
+            <input type ="radio" name="Q1" id="1.4" value="Mario Andretti">
+            <label for="1.4">Mario Andretti</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">2.What does the yellow flag mean?</p>
+            <input type ="radio" name="Q2" id="2.1" value="Get ready">
+            <label for="2.1">Get ready</label>
+            <input type ="radio" name="Q2" id="2.2" value="Go">
+            <label for="2.2">Go</label>
+            <input type ="radio" name="Q2" id="2.3" value="Caution">
+            <label for="2.3">Caution</label>
+            <input type ="radio" name="Q2" id="2.4" value="Stop">
+            <label for="2.4">Stop</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">3.In 1966, Mario Andretti held the pole position but lost to British driver Graham Hill in which race?</p>
+            <input type ="radio" name="Q3" id="3.1" value="Monaco Grand Prix">
+            <label for="3.1">Monaco Grand Prix</label>
+            <input type ="radio" name="Q3" id="3.2" value="24 Hours of Le Mans">
+            <label for="3.2">24 Hours of Le Mans</label>
+            <input type ="radio" name="Q3" id="3.3" value="United States Grand Prix">
+            <label for="3.3">United States Grand Prix</label>
+            <input type ="radio" name="Q3" id="3.4" value="Indianapolis 500">
+            <label for="3.4">Indianapolis 500</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">4.Which of the following drivers lost his bid for the F3000 championship to Jorg Muller?</p>
+            <input type ="radio" name="Q4" id="4.1" value="Kenny Brack">
+            <label for="4.1">Kenny Brack</label>
+            <input type ="radio" name="Q4" id="4.2" value="Ralf Schumacher">
+            <label for="4.2">Ralf Schumacher</label>
+            <input type ="radio" name="Q4" id="4.3" value="Giancarlo Fiscichella">
+            <label for="4.3">Giancarlo Fiscichella</label>
+            <input type ="radio" name="Q4" id="4.4" value="Helio Castroneves">
+            <label for="4.4">Helio Castroneves</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">5.Stan Fox's best finish at the Indy 500 was?</p>
+            <input type ="radio" name="Q5" id="5.1" value="5th place">
+            <label for="5.1">5th place</label>
+            <input type ="radio" name="Q5" id="5.2" value="7th place">
+            <label for="5.2">7th place</label>
+            <input type ="radio" name="Q5" id="5.3" value="1st place">
+            <label for="5.3">1st place</label>
+            <input type ="radio" name="Q5" id="5.4" value="3rd place">
+            <label for="5.4">3rd place</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">6.Which flag is thrown to start the race?</p>
+            <input type ="radio" name="Q6" id="6.1" value="Blue">
+            <label for="6.1">Blue</label>
+            <input type ="radio" name="Q6" id="6.2" value="Black">
+            <label for="6.2">Black</label>
+            <input type ="radio" name="Q6" id="6.3" value="Green">
+            <label for="6.3">Green</label>
+            <input type ="radio" name="Q6" id="6.4" value="Red">
+            <label for="6.4">Red</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">7.In which country was the term Grand Prix first used for a motor race?</p>
+            <input type ="radio" name="Q7" id="7.1" value="USA">
+            <label for="7.1">USA</label>
+            <input type ="radio" name="Q7" id="7.2" value="UK">
+            <label for="7.2">UK</label>
+            <input type ="radio" name="Q7" id="7.3" value="France">
+            <label for="7.3">France</label>
+            <input type ="radio" name="Q7" id="7.4" value="Germany">
+            <label for="7.4">Germany</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">8.What is the name of the youngest F1 driver to win a race? </p>
+            <input type ="radio" name="Q8" id="8.1" value="Max Verstappen">
+            <label for="8.1">Max Verstappen</label>
+            <input type ="radio" name="Q8" id="8.2" value="Kimi Räikkönen">
+            <label for="8.2">Kimi Räikkönen</label>
+            <input type ="radio" name="Q8" id="8.3" value="Giuseppe Farina">
+            <label for="8.3">Giuseppe Farina</label>
+            <input type ="radio" name="Q8" id="8.4" value="Achille Varzi">
+            <label for="8.4">Achille Varzi</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">9.Sebastian Vettel is currently a driver for Aston Martin and holder of the title Youngest World Drivers 
+                Championship winner. Which country was he born in?</p>
+            <input type ="radio" name="Q9" id="9.1" value="France">
+            <label for="9.1">France</label>
+            <input type ="radio" name="Q9" id="9.2" value="Argentina">
+            <label for="9.2">Argentina</label>
+            <input type ="radio" name="Q9" id="9.3" value="Poland">
+            <label for="9.3">Poland</label>
+            <input type ="radio" name="Q9" id="9.4" value="Germany">
+            <label for="9.4">Germany</label>
+        </div>
+
+        <div class="questions">
+            <p class="paragraph">10.Fernando Alonso won the F1 World Drivers Championship in 2005 and 2006. Which team was he driving for?</p>
+            <input type ="radio" name="Q10" id="10.1" value="Ferrari">
+            <label for="10.1">Ferrari</label>
+            <input type ="radio" name="Q10" id="10.2" value="Renault">
+            <label for="10.2">Renault</label>
+            <input type ="radio" name="Q10" id="10.3" value="BMW">
+            <label for="10.3">BMW</label>
+            <input type ="radio" name="Q10" id="10.4" value="Team Haas">
+            <label for="10.4">Team Haas</label>
+
+            <br><br>
+            <input type="button" class="button" value="Submit" onclick="check()">
+        </div> 
+    </form> 
+
+    <footer>
+        <div class="footer">
+            <div class="container">
+                <div class="row">
+                    <div class="footer-col-1">
+                        <img src="../Quiz/Footer/img1.png" style="width: 220px;" alt="logo">
+                    </div>
+                    <div class="footer-col-2">
+                    <img src="../Quiz/Footer/logo2.png" alt="G5_logo">
+                    </div>
+                    <div class="footer-col-3">
+                        <h3>Useful links</h3>
+                        <ul class="ull">
+                            <li><a href="../../Vinisha/S4SVG.html">Site Map</a></li>
+                            <li><a href="../../Pasan/Query/Query.html">Inquiry</a></li>
+                            <li><a href="Quiz.html">Quiz</a></li>
+                            <li><a href="../About us/About us.html">About us</a></li>
+                        </ul>
+                    </div>
+                    <div class="footer-col-4">
+                        <h3>Follow Us</h3>
+                        <ul class="ull">
+                            <li>Facebook</li>
+                            <li>Twitter</li>
+                            <li>Instagram</li>
+                            <li>Youtube</li>
+                        </ul>
+                    </div>
+                    <div class="ull">
+                        <span>Created by || <a href = "Page_editor_Quiz.html">Hasitha Wimalasooriya</a></span>
+
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>

@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main page</title>
+    <link rel="stylesheet" href="second.css">
+</head>
+<body>
+
+   <div class="navbar">
+      <div class="logo"> 
+          <img src="./Images/logo.png" alt="groupLogo" style="height: 48px; width: 130px;">
+      </div>
+       <ul class="navlist">
+            <li><a href="">Home</a></li>
+            <li><a href="">Motor Sports <i class="fas fa-caret-down"></i></a>
+                <div class="dropdown_menu">
+                     <ul>
+                         <li><a href="">Rally</a></li>
+                         <li><a href="">4x4</a></li>
+                         <li><a href="">Formula 1</a></li>
+                         <li><a href="">Karting</a></li>
+                     </ul>
+                </div>
+            </li>    
+            <li><a href="">Popular Vehicles</a></li>
+            <li><a href="">Events</a></li>
+            <li><a href="">Shop now <i class="fas fa-caret-down"></i></a>
+            <div class="dropdown_menu">   
+                <ul>
+                    <li><a href="">Sports wear</a></li>
+                    <li><a href="">Accesories</a></li>
+                </ul>
+            </div> 
+            </li>
+            <li><a href="">About us</a></li>
+          </ul>
+    </div>
+    <div class="vertical2">
+      <h1>Related pages</h1>  
+        <div class="pages">
+            <p><a href="https://www.nhra.com/nhra">Drag Racing </a></p>
+            <p> <a href="https://www.wcairrace.com/">Air Racing</a></p>
+            <p><a href="https://www.nascar.com/">Nascar Racing </a></p>
+            <p> <a href="https://dirtfish.com/">Rally Racing</a></p>
+            <p> <a href="https://www.formula1.com/">Formula 1</a></p>
+            <p> <a href="https://www.k1speed.com/">Kart Racing</a></p>
+            <p> <a href="https://themint400.com/">4x4 Racing</a></p>
+        </div>
+    </div>   
+        
+          <div class="slides" style="max-width:400px">
+            
+            
+              <img class="mySlides" src="./Images/karting1.jpeg" style="width:160%" alt="kartImage">
+              <img class="mySlides" src="./Images/nascar.jpg" style="width:160%"    alt="nascarImage">
+              <img class="mySlides" src="./Images/mudjeep.jpg" style="width:160%"   alt="jeepImage">
+              <img class="mySlides" src="./Images/offgii.gif" style="width:160%"    alt="offroadGif">
+              <img class="mySlides" src="./Images/formula.jpg" style="width:160%"   alt="formulaImage"> 
+              <img class="mySlides" src="./Images/formulagif.gif" style="width:160%" alt="formulaGif">           
+              <img class="mySlides" src="./Images/rally12.jpg" style="width:160%"   alt="rallyImages">
+              <img class="mySlides" src="./Images/rally.gif" style="width:160%"     alt="rallygif">
+          </div>
+       
+          <script>
+          var slideIndex = 0;
+          slideshow();
+          
+          function slideshow() {
+            var i;
+            var x = document.getElementsByClassName("mySlides");
+            for (i = 0; i < x.length; i++) {
+              x[i].style.display = "none"; 
+            }
+            slideIndex++;
+            if (slideIndex > x.length) {slideIndex = 1} 
+            x[slideIndex-1].style.display = "block"; 
+            setTimeout(slideshow, 2000); 
+          }
+          </script>
+          <div class="vertical3">
+            <h1>World record holding machine</h1>
+            <img src="./Images/gtr3.png" alt="GtrImage"  style="height: 200px; width: 90%;">
+            <p><strong>Breaking a new record with a flyby of 6.58 at 232 mph. <a href="http://blog.diamondracing.net/alphas-3400hp-gt-r-is-a-world-beater">More details</a></strong> </p>
+          </div>
+    
+          
+</body>
+</html>

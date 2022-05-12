@@ -1,0 +1,124 @@
+*{
+
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background: #333;
+    position: relative; 
+}
+
+.navbar{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    width: 100%;
+    height: 48px;
+    background-color: black;
+    text-align: center;
+}
+
+
+.navbar ul{
+    
+    list-style-type:none;
+    display: inline-flex;
+    background-color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: 40px;
+}
+.navbar ul li{
+    padding: 10px 60px;
+    position: relative;
+}
+
+.navbar ul li a{
+    text-align: center;
+    text-decoration: none;
+    font-size: 18px;
+    color: white;
+}
+
+
+
+.dropdown_menu{
+    left: 0;
+    top: 100%;
+    display: none;
+    position: fixed;
+}
+
+.navbar ul li:hover .dropdown_menu{
+    display: block;
+    position: absolute;
+    
+}
+
+
+.dropdown_menu ul{
+    
+    display: block;
+    margin: 0px;
+    width: 228px;
+}
+
+.dropdown_menu ul li a{
+    text-align: left;
+}
+
+.logo{
+    float: left;
+    margin-left: 50px;
+}
+.navlist  a:hover{
+    color: greenyellow;
+    text-decoration: none;
+    
+}
+.dropdown_menu  li:hover{
+    color: greenyellow;
+    background-color: darkslateblue;
+}
+.fas{
+    float: right;
+    margin-left: 20px;
+    padding-top: 20px;
+
+}
+
+.personal-img{
+    margin-top: 10%;
+    margin-left: 18%;
+    position: absolute;
+    
+    
+}
+.personal-img img{
+    border-radius: 30px;
+}
+.info{
+    width: 700px;
+    height: 440px;
+    margin-top: 10%;
+    margin-left: 44%;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    color: white;
+    position: absolute;
+    float: left;
+}
+
+.info h3{
+  margin-top: 40px;
+}
+.info h4{
+    margin-top: 40px;
+}
+
+.info ul{
+    margin-top: 40px;
+    margin-left: 30px;
+
+}
